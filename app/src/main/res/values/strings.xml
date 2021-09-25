@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">IndividualProject1_Login</string>
+    <string name="dialog_title">Please sign in</string>
+    <string name="username" />
+    <string name="password" />
+    <string name="first_name"></string>
+    <string name="last_name"></string>
+    <string name="email"></string>
+    <string name="dob"></string>
+    <string name="confirm">Log In</string>
+    <string name="welcome_text">Welcome to super confidential content!</string>
+    <string name="login_button_text">Existing user? Log in</string>
+    <string name="create_account_button_text">New user? Click here to create account</string>
+    <string name="create_account_title">Please complete form below to register:</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="dob_hint">Date Of Birth ex: xx/xx/xxxx</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Create a Username</string>
+    <string name="password_hint">Create a Password</string>
+    <string name="create_account_submission">Create Account</string>
+    <string name="password_dialog_hint">Password</string>
+    <string name="username_dialog_hint">Username</string>
+</resources>
