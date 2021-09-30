@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IndividualProject1_Login</string>
+    <string name="app_name">Login Simulation</string>
     <string name="dialog_title">Please sign in</string>
     <string name="username" />
     <string name="password" />
@@ -21,4 +21,5 @@
     <string name="create_account_submission">Create Account</string>
     <string name="password_dialog_hint">Password</string>
     <string name="username_dialog_hint">Username</string>
+    <string name="access_granted">Were In.</string>
 </resources>

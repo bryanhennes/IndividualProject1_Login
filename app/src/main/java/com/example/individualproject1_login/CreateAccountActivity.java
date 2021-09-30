@@ -2,11 +2,16 @@ package com.example.individualproject1_login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 public class CreateAccountActivity extends AppCompatActivity {
     EditText firstNameEdit;
@@ -28,6 +33,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
+        //assign edittext fields
         firstNameEdit = (EditText) findViewById(R.id.first_name_field);
         lastNameEdit = (EditText) findViewById(R.id.last_name_field);
         dobEdit = (EditText) findViewById(R.id.dob_field);
@@ -64,6 +70,7 @@ public class CreateAccountActivity extends AppCompatActivity {
             highlightEmptyFields(passwordEdit);
         }
     }
+
 
     //return to login screen if form filled out properly
     public void returnToLogin(View view) {

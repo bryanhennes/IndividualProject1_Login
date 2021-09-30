@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Gamer/AndroidStudioProjects/IndividualProject1_Login/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Gamer/AndroidStudioProjects/IndividualProject1_Login/app/src/main/res/layout/activity_access.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Gamer/AndroidStudioProjects/IndividualProject1_Login/app/src/main/res/layout/activity_create_account.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Gamer/AndroidStudioProjects/IndividualProject1_Login/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Gamer/AndroidStudioProjects/IndividualProject1_Login/app/src/main/res/layout/custom_dialog.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Gamer/AndroidStudioProjects/IndividualProject1_Login/app/src/main/res/xml/custom_dialog.xml" value="0.36666666666666664" />
       </map>

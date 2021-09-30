@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     String savedPassword;
     Dialog dialog;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,14 +28,17 @@ public class MainActivity extends AppCompatActivity {
         savedUsername = recString.getStringExtra("savedUsername");
         savedPassword = recString.getStringExtra("savedPassword");
 
+
     }
 
+    //move to create account activity if create account button is clicked
     public void goToCreateAccount(View view) {
         Intent intent = new Intent(this, CreateAccountActivity.class);
         this.startActivity(intent);
 
     }
 
+    //create dialog to allow user to login
     public void showDialog(View view){
         dialog = new Dialog(MainActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -44,18 +48,17 @@ public class MainActivity extends AppCompatActivity {
         usernameEdit = dialog.findViewById(R.id.username_field);
         passwordEdit = dialog.findViewById(R.id.password_field);
 
-        tempUsername = usernameEdit.getText().toString();
-        tempPassword = passwordEdit.getText().toString();
-
         dialog.show();
     }
 
-    //stuck in a loop
+    //check if credentials match, if so proceed to final activity
     public void checkCredentials(View view){
+        tempUsername = usernameEdit.getText().toString();
+        tempPassword = passwordEdit.getText().toString();
 
-        if(tempUsername == savedUsername && tempPassword == savedPassword){
+        //if credentials match, proceed to next activity
+        if(tempUsername.equals(savedUsername) && tempPassword.equals(savedPassword)){
             successfulLogin(view);
-            dialog.dismiss();
         }
         else {
             Toast.makeText(MainActivity.this, "Invalid username or password", Toast.LENGTH_LONG).show();
