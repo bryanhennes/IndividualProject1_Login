@@ -22,4 +22,9 @@
     <string name="password_dialog_hint">Password</string>
     <string name="username_dialog_hint">Username</string>
     <string name="access_granted">Were In.</string>
+    <string name="welcome">"Welcome "</string>
+    <string name="display_firstName">"First Name: "</string>
+    <string name="display_lastName">"Last Name: "</string>
+    <string name="display_email">"Email: "</string>
+    <string name="display_DOB">"Date of Birth: "</string>
 </resources>

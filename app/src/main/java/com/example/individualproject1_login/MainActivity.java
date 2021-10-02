@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     String tempPassword;
     String savedUsername;
     String savedPassword;
+    String savedFirstname;
+    String savedLastname;
+    String savedEmail;
+    String savedDOB;
     Dialog dialog;
 
 
@@ -27,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
         Intent recString = getIntent();
         savedUsername = recString.getStringExtra("savedUsername");
         savedPassword = recString.getStringExtra("savedPassword");
+        savedFirstname = recString.getStringExtra("savedFirstName");
+        savedLastname = recString.getStringExtra("savedLastName");
+        savedEmail = recString.getStringExtra("savedEmail");
+        savedDOB = recString.getStringExtra("savedDOB");
+
 
 
     }
@@ -37,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         this.startActivity(intent);
 
     }
+
 
     //create dialog to allow user to login
     public void showDialog(View view){
@@ -68,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void successfulLogin(View view){
         Intent intent = new Intent(this, AccessActivity.class);
+        intent.putExtra("firstName", savedFirstname);
+        intent.putExtra("lastName", savedLastname);
+        intent.putExtra("email", savedEmail);
+        intent.putExtra("dob", savedDOB);
+        intent.putExtra("username", savedUsername);
         this.startActivity(intent);
     }
 }
